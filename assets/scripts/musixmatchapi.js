@@ -17,18 +17,10 @@ function songSearch() {
             url: songLyricsUrl,
             method: "GET",
         }).then(function (response) {
-            console.log(songID)
-
+           
             var lyrics = response.message.body.lyrics.lyrics_body
-
-            console.log(lyrics)
-
             $('#lyrics').text(lyrics)
         })
-
     })
-
-
 }
 
-$('#push').text(response)
